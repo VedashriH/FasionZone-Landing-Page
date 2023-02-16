@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionZone - Best fashion store online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+    <script src="timer.js"></script>
+    <script src="imgchange.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <header class="head">
+            <nav class="flex justify-between">
+
+                <div class="logo font-bold flex items-center">
+                    <img class="logoimg" src="logo4.png" alt="">
+                    FashionZone
+                </div>
+                <ul class="navbar flex items-center">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                    <li><button class="btn">Log In</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center">
+                        <div class="logo font-bold flex justify-center size">
+                            FashionZone
+                        </div>
+                        <h1 class="my-1 text-center">The best online fashion store for women is here!</h1>
+                        <p class=" text-center">Get the best deals on latest fashion accecories and cloths.</p>
+                        <h2 class=" text-center"><strong> Upto 50% Off</strong></h2>
+                        <p class=" text-center">Join now to grab the greatest fashion deals.</p>
+
+                        <p class="deal text-center">The deal ends in <strong> <span id="demo"></span></strong></p>
+                        <div class="buttons">
+                            <button class="btn2">Shop Now</button>
+                        </div>
+
+
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img src="" id="pic">
+                        <script type="text/javascript">
+                            let pic = document.getElementById('pic');
+                            let pics = ['pic1.jpg','pic2.jpeg','pic3.jpg']
+                            setInterval(function() {
+                                let random = Math.floor(Math.random() * 3);
+                                pic.src = pics[random];
+                            }, 6000);
+                        </script>
+                    </div>
+
+            </section>
+            
+            <section class="section2 ">
+                <h1 class="sub">CATEGORIES TO BAG</h1>
+                <div class="inner  flex flex-row justify-center ">
+                <div class="box text-center">
+                    <img class="fw" src="fw1.jpg" alt="">
+                    <h1>Footwear</h1>
+                    <p><strong>40-50% Off</strong></p>
+
+                </div>
+                <div class="box text-center">
+                    <img class="jewel" src="jewel.jpg" alt="">
+                    <h1>Jewelery</h1>
+                    <p><strong>20-30% Off</strong></p>
+                </div>
+                <div class="box text-center">
+                    <img class="bag" src="bag1.jpg" alt="">
+                    <h1>Bags</h1>
+                    <p><strong>30-40% Off</strong></p>
+                </div>
+                <div class="box text-center">
+                    <img class="jack" src="jack.jpg" alt="">
+                    <h1>Jackets</h1>
+                    <p><strong>40-60% Off</strong></p>
+                </div>
+                <div class="box text-center">
+                    <img class="cos" src="cos.jpg" alt="">
+                    <h1>Cosmatics</h1>
+                    <p><strong>40-50% Off</strong></p>
+                </div>
+            </div>
+            </section>
+
+        </main>
+        <hr>
+        <footer class="foot">
+            <p>Copyright@2023 FashionZone Pvt. Ltd. All Right Reserved by Vedashri H</p>
+        </footer>
+
+    </div>
+</body>
